@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="bn" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shahinur Rahman Khan | Software Developer & Entrepreneur</title>
+  <meta name="description" content="Official Portfolio & Tech Blog of Shahinur Rahman Khan - Software Developer, Tech Architect & Entrepreneur." />
+  <meta name="keywords" content="Shahinur Rahman Khan, Software Developer, Entrepreneur, Web Development, React, Next.js, Full Stack, Bangladesh" />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" type="image/jpeg" href="assets/images/profile.jpg" />
+</head>
+<body>
+  <!-- Ambient background lighting -->
+  <div class="ambient-glow ambient-glow-1"></div>
+  <div class="ambient-glow ambient-glow-2"></div>
+  <div class="ambient-glow ambient-glow-3"></div>
+
+  <!-- Header & Navigation -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="#hero" class="logo-link">
+        <span class="logo-badge">SRK</span>
+        <span>Shahinur Rahman Khan</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">আমার সম্পর্কে</a></li>
+          <li><a href="#skills" class="nav-link">দক্ষতা</a></li>
+          <li><a href="#projects" class="nav-link">প্রজেক্ট ও ভেঞ্চার</a></li>
+          <li><a href="#experience" class="nav-link">অভিজ্ঞতা</a></li>
+          <li><a href="#blog" class="nav-link">ব্লগ</a></li>
+          <li><a href="#contact" class="nav-link">যোগাযোগ</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="header-actions">
+        <button class="btn btn-primary btn-sm trigger-publish-blog header-cta" title="নতুন ব্লগ পোস্ট পাবলিশ করুন">
+          ✍️ ব্লগ লিখুন
+        </button>
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Theme">
+          <!-- Populated by JavaScript -->
+        </button>
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Open Navigation Menu">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Drawer -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer">
+    <a href="#about" class="mobile-nav-link">আমার সম্পর্কে (About)</a>
+    <a href="#skills" class="mobile-nav-link">দক্ষতা (Skills)</a>
+    <a href="#projects" class="mobile-nav-link">প্রজেক্ট ও ভেঞ্চার (Projects)</a>
+    <a href="#experience" class="mobile-nav-link">অভিজ্ঞতা (Experience)</a>
+    <a href="#blog" class="mobile-nav-link">ব্লগ (Blog)</a>
+    <a href="#contact" class="mobile-nav-link">যোগাযোগ (Contact)</a>
+    <button class="btn btn-primary trigger-publish-blog" style="margin-top: 1rem; width: 100%;">
+      ✍️ নতুন ব্লগ লিখুন
+    </button>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Left Column: Content -->
+          <div class="hero-content">
+            <div class="hero-status-tag">
+              <span class="status-dot"></span>
+              <span>নতুন প্রজেক্ট ও সহযোগিতার জন্য উন্মুক্ত</span>
+            </div>
+            
+            <h1 class="hero-title">
+              হ্যালো, আমি <br />
+              <span class="text-gradient">Shahinur Rahman Khan</span>
+            </h1>
+
+            <div class="hero-role">
+              🚀 Software Developer & Tech Entrepreneur
+            </div>
+
+            <p class="hero-bio">
+              আমি একজন প্যাশনেট ফুল-স্ট্যাক সফটওয়্যার ডেভেলপার ও প্রযুক্তি উদ্যোক্তা। জটিল ব্যবসায়িক ধারণাকে আধুনিক, নিরাপদ ও স্কেলেবল সফটওয়্যারে রূপান্তর করাই আমার মূল শক্তি।
+            </p>
+
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">
+                আমার প্রজেক্টগুলো দেখুন
+              </a>
+              <a href="#blog" class="btn btn-secondary">
+                📖 ব্লগ পড়ুন
+              </a>
+              <a href="#contact" class="btn btn-outline">
+                যোগাযোগ করুন
+              </a>
+            </div>
+
+            <div class="hero-metrics">
+              <div class="metric-item">
+                <span class="metric-number">৫+ বছর</span>
+                <span class="metric-label">ইন্ডাস্ট্রি অভিজ্ঞতা</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-number">২৫+</span>
+                <span class="metric-label">সফল প্রজেক্ট</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-number">১০০%</span>
+                <span class="metric-label">ক্লায়েন্ট সন্তুষ্টি</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: User Portrait Card with Floating Badges -->
+          <div class="hero-image-wrapper">
+            <div class="hero-image-card">
+              <img src="assets/images/profile.jpg" alt="Shahinur Rahman Khan" class="hero-img" />
+              
+              <div class="floating-badge floating-badge-1">
+                <span>💡</span>
+                <div>
+                  <div style="font-size:0.75rem; color:var(--text-muted);">ভূমিকা</div>
+                  <div>Tech Founder</div>
+                </div>
+              </div>
+
+              <div class="floating-badge floating-badge-2">
+                <span>⚡</span>
+                <div>
+                  <div style="font-size:0.75rem; color:var(--text-muted);">স্পেশালিটি</div>
+                  <div>Full-Stack Arch</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-pill">আমার পরিচয়</span>
+          <h2 class="section-title">প্রযুক্তি ও উদ্যোক্তা দৃষ্টিভঙ্গির সমন্বয়</h2>
+          <p class="section-subtitle">
+            কোডিং শুধু আমার পেশা নয়, এটি আমার বাস্তব সমস্যা সমাধানের সবচেয়ে বড় হাতিয়ার।
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div>
+            <h3 style="font-size: 1.6rem; margin-bottom: 1.25rem;">
+              স্কেলেবল আর্কিটেকচার থেকে সফল প্রোডাক্ট লঞ্চ
+            </h3>
+            <p style="margin-bottom: 1.2rem; font-size: 1.05rem;">
+              আমি <strong>Shahinur Rahman Khan</strong>। একজন সফটওয়্যার ইঞ্জিনিয়ার এবং উদ্যোক্তা হিসেবে আমি প্রযুক্তিগত উৎকর্ষতা এবং ব্যবসায়িক প্রবৃদ্ধির মধ্যকার সেতুবন্ধন তৈরি করতে পছন্দ করি। 
+            </p>
+            <p style="margin-bottom: 1.2rem; font-size: 1.05rem;">
+              গত কয়েক বছর ধরে আমি আধুনিক ওয়েব অ্যাপ্লিকেশন, মাইক্রোসার্ভিসেস এবং ক্লাউড আর্কিটেকচার ডিজাইন ও ডেভেলপমেন্ট নিয়ে কাজ করছি। শুধু কোড লিখেই ক্ষান্ত হই না; গ্রাহকের সত্যিকার চাহিদা অনুধাবন করে মিনিমাম ভায়েবল প্রোডাক্ট (MVP) তৈরি এবং স্কেল করতে সাহায্য করি।
+            </p>
+            <p style="font-size: 1.05rem;">
+              প্রতিনিয়ত নতুন প্রযুক্তি শেখা, ডেভেলপার কমিউনিটিতে অভিজ্ঞতা শেয়ার করা এবং উদ্ভাবনী স্টার্টআপ ধারণাকে বাস্তবে রূপ দেওয়াই আমার দৈনন্দিন লক্ষ্য।
+            </p>
+          </div>
+
+          <div class="about-highlights">
+            <div class="highlight-card">
+              <div class="highlight-icon">💻</div>
+              <h4>ক্লিন ও স্কেলেবল কোড</h4>
+              <p>মডার্ন সফটওয়্যার ডিজাইন প্যাটার্ন ও সেরা সিকিউরিটি চর্চা অনুসরণ করে কোড লিখি।</p>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-icon">🚀</div>
+              <h4>উদ্যোক্তা মননশীলতা</h4>
+              <p>প্রোডাক্ট ভ্যালিডেশন, মার্কেট ফিট ও ব্যবহারকারী-বান্ধব ফিচার তৈরিতে পারদর্শী।</p>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-icon">⚡</div>
+              <h4>দ্রুত ডেলিভারি ও MVP</h4>
+              <p>আইডিয়া থেকে কার্যকর সফটওয়্যার প্রোটোটাইপ দ্রুত সময়ে বাজারে লঞ্চ করার দক্ষতা।</p>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-icon">🤝</div>
+              <h4>লিডারশিপ ও টিমওয়ার্ক</h4>
+              <p>এজাইল স্প্রিন্ট পরিচালনা ও ক্রস-ফাংশনাল টিমকে সাথে নিয়ে সফল ডেলিভারি।</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-pill">দক্ষতা ও টেক স্ট্যাক</span>
+          <h2 class="section-title">প্রযুক্তিগত পারদর্শিতা</h2>
+          <p class="section-subtitle">
+            যেসব আধুনিক ফ্রেমওয়ার্ক, ল্যাঙ্গুয়েজ ও ক্লাউড টুলস নিয়ে আমি নিয়মিত কাজ করি
+          </p>
+        </div>
+
+        <div class="skills-tabs" id="skillsTabs">
+          <button class="tab-btn active" data-skill-cat="all">সব দক্ষতা (All)</button>
+          <button class="tab-btn" data-skill-cat="frontend">Frontend</button>
+          <button class="tab-btn" data-skill-cat="backend">Backend & Database</button>
+          <button class="tab-btn" data-skill-cat="devops">DevOps & Cloud</button>
+          <button class="tab-btn" data-skill-cat="business">Entrepreneurship</button>
+        </div>
+
+        <div class="skills-grid" id="skillsGrid">
+          <!-- Rendered dynamically by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-pill">পোর্টফোলিও ও ভেঞ্চার</span>
+          <h2 class="section-title">উল্লেখযোগ্য প্রজেক্ট ও উদ্যোগ</h2>
+          <p class="section-subtitle">
+            বাস্তব সমস্যা সমাধানে নির্মিত আমার কিছু নির্বাচিত সফটওয়্যার এবং ভেঞ্চার
+          </p>
+        </div>
+
+        <div class="projects-filter" id="projectsFilter">
+          <button class="tab-btn active" data-project-cat="all">সব প্রজেক্ট</button>
+          <button class="tab-btn" data-project-cat="software">সফটওয়্যার প্রোডাক্টস</button>
+          <button class="tab-btn" data-project-cat="ventures">উদ্যোক্তা ভেঞ্চার</button>
+          <button class="tab-btn" data-project-cat="client">ক্লায়েন্ট সলিউশন</button>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Rendered dynamically by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog-section" id="blog">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-pill">নলেজ শেয়ারিং ও ব্লগ</span>
+          <h2 class="section-title">চিন্তাভাবনা ও প্রযুক্তিগত ব্লগ</h2>
+          <p class="section-subtitle">
+            সফটওয়্যার ইঞ্জিনিয়ারিং, স্টার্টআপ জার্নি ও আধুনিক প্রযুক্তির বিশ্লেষণ। আপনিও এখানে সরাসরি নতুন ব্লগ প্রকাশ করতে পারবেন!
+          </p>
+        </div>
+
+        <!-- Controls: Search, New Blog Trigger, Export -->
+        <div class="blog-controls-bar">
+          <div class="blog-search-box">
+            <span class="blog-search-icon">🔍</span>
+            <input type="text" id="blogSearchInput" placeholder="ব্লগের শিরোনাম, টপিক বা ট্যাগ দিয়ে খুঁজুন..." />
+          </div>
+
+          <div class="blog-actions-wrap">
+            <span id="blogCountBadge" style="font-size: 0.88rem; color: var(--text-muted); font-weight: 600;"></span>
+            <button class="btn btn-primary trigger-publish-blog">
+              ✍️ নতুন ব্লগ লিখুন
+            </button>
+            <button class="btn btn-secondary btn-sm" id="exportBlogsBtn" title="ব্লগ ব্যাকআপ ডাউনলোড করুন">
+              💾 ব্যাকআপ
+            </button>
+            <button class="btn btn-secondary btn-sm" id="resetBlogsBtn" title="ডিফল্ট ব্লগে রিসেট করুন">
+              🔄 রিসেট
+            </button>
+          </div>
+        </div>
+
+        <!-- Category Filter Pills -->
+        <div class="blog-category-filter" id="blogCategoryFilter">
+          <!-- Rendered dynamically by blog.js -->
+        </div>
+
+        <!-- Blog Cards Grid -->
+        <div class="blog-grid" id="blogGrid">
+          <!-- Rendered dynamically by blog.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience / Milestones Section -->
+    <section class="experience-section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-pill">ক্যারিয়ার টাইমলাইন</span>
+          <h2 class="section-title">অভিজ্ঞতা ও মাইলফলক</h2>
+          <p class="section-subtitle">
+            যেভাবে এগিয়েছে আমার সফটওয়্যার আর্কিটেকচার ও উদ্যোগের যাত্রা
+          </p>
+        </div>
+
+        <div style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 1.5rem;">
+          <div class="highlight-card" style="border-left: 4px solid var(--accent-primary);">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; flex-wrap: wrap; gap: 0.5rem;">
+              <h3 style="font-size: 1.25rem;">Founder & Lead Software Architect</h3>
+              <span class="tech-tag" style="background: rgba(16, 185, 129, 0.2); color: var(--accent-primary);">২০২৩ - বর্তমান</span>
+            </div>
+            <div style="font-weight: 600; color: var(--accent-primary); margin-bottom: 0.75rem;">Tech Venture Studio</div>
+            <p>
+              প্রোডাক্ট স্ট্র্যাটেজি নেতৃত্ব, উচ্চ-স্কেল ক্লাউড প্ল্যাটফর্মের ডিজাইন, টেকনিক্যাল টিম মেন্টরশিপ এবং বিভিন্ন ক্লায়েন্টের জন্য ইনোভেটিভ সফটওয়্যার সলিউশন সফলভাবে পরিচালনা।
+            </p>
+          </div>
+
+          <div class="highlight-card" style="border-left: 4px solid var(--accent-secondary);">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; flex-wrap: wrap; gap: 0.5rem;">
+              <h3 style="font-size: 1.25rem;">Senior Full Stack Software Engineer</h3>
+              <span class="tech-tag">২০২১ - ২০২৩</span>
+            </div>
+            <div style="font-weight: 600; color: var(--accent-secondary); margin-bottom: 0.75rem;">Digital Solutions Inc.</div>
+            <p>
+              মাইক্রোসার্ভিসেস ইঞ্জিনিয়ারিং, রিঅ্যাক্ট ও নেক্সট.জেএস ফ্রন্টএন্ড ডেভেলপমেন্ট, কোড রিভিউ এবং ডেটাবেজ পারফরম্যান্স ৪০% বৃদ্ধি করার সফল অভিজ্ঞতা।
+            </p>
+          </div>
+
+          <div class="highlight-card" style="border-left: 4px solid var(--accent-emerald);">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; flex-wrap: wrap; gap: 0.5rem;">
+              <h3 style="font-size: 1.25rem;">Full Stack Developer</h3>
+              <span class="tech-tag">২০১৯ - ২০২১</span>
+            </div>
+            <div style="font-weight: 600; color: var(--accent-emerald); margin-bottom: 0.75rem;">Innovate Labs</div>
+            <p>
+              ইন্টারেক্টিভ ওয়েব অ্যাপ্লিকেশন তৈরি, পেমেন্ট গেটওয়ে ইন্টিগ্রেশন এবং স্বয়ংক্রিয় সিআই/সিডি পাইপলাইন বাস্তবায়ন।
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-pill">যোগাযোগ করুন</span>
+          <h2 class="section-title">আসুন একসাথে নতুন কিছু তৈরি করি</h2>
+          <p class="section-subtitle">
+            আপনার কোনো নতুন সফটওয়্যার প্রজেক্ট, স্টার্টআপ আইডিয়া অথবা পরামর্শ থাকলে নির্দ্বিধায় বার্তা পাঠাতে পারেন
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info -->
+          <div class="contact-info-card">
+            <div>
+              <h3 style="font-size: 1.4rem; margin-bottom: 0.75rem;">সরাসরি যোগাযোগ</h3>
+              <p>আমি সবসময় নতুন চ্যালেঞ্জিং প্রজেক্ট ও উদ্ভাবনী উদ্যোগ নিয়ে কথা বলতে পছন্দ করি।</p>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon">📍</div>
+              <div class="contact-item-details">
+                <h4>ঠিকানা</h4>
+                <p>ঢাকা, বাংলাদেশ (রিমোট ও গ্লোবাল কোলাবোরেশনের জন্য উন্মুক্ত)</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon">✉️</div>
+              <div class="contact-item-details">
+                <h4>ইমেইল</h4>
+                <a href="mailto:srkhancucse@gmail.com">srkhancucse@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon">💬</div>
+              <div class="contact-item-details">
+                <h4>হোয়াটসঅ্যাপ (প্রধান যোগাযোগ)</h4>
+                <a href="https://wa.me/8801903516116" target="_blank" rel="noopener" style="color: #25D366; font-weight: 700;">+৮৮০ ১৯০৩৫১৬১১৬</a>
+              </div>
+            </div>
+
+            <div>
+              <h4 style="margin-bottom: 0.75rem;">সোশ্যাল মিডিয়া প্রোফাইল</h4>
+              <div class="contact-social-links">
+                <a href="https://wa.me/8801903516116" class="social-circle-btn" target="_blank" rel="noopener" aria-label="WhatsApp" style="color:#25D366;">
+                  💬
+                </a>
+                <a href="https://github.com" class="social-circle-btn" target="_blank" rel="noopener" aria-label="GitHub">
+                  💻
+                </a>
+                <a href="https://linkedin.com" class="social-circle-btn" target="_blank" rel="noopener" aria-label="LinkedIn">
+                  💼
+                </a>
+                <a href="https://twitter.com" class="social-circle-btn" target="_blank" rel="noopener" aria-label="Twitter">
+                  🐦
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form Card -->
+          <div class="contact-form-card">
+            <!-- Header: Default WhatsApp -->
+            <div style="margin-bottom: 1.5rem;">
+              <h3 style="font-size: 1.4rem; display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.4rem;">
+                <span style="color: #25D366;">💬</span> সরাসরি WhatsApp-এ বার্তা পাঠান
+              </h3>
+              <p style="font-size: 0.92rem; color: var(--text-secondary);">
+                নিচের ফর্মটি পূরণ করে বাটনে চাপ দিন, সাথে সাথে আমার WhatsApp-এ আপনার বার্তাটি পৌঁছে যাবে।
+              </p>
+            </div>
+
+            <!-- WhatsApp Form (Default & Primary) -->
+            <form id="whatsappForm">
+              <div class="form-group">
+                <label class="form-label" for="waName">আপনার নাম *</label>
+                <input type="text" id="waName" name="name" class="form-control" placeholder="যেমন: রাশেদ মাহমুদ" required />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="waPhone">আপনার ফোন নম্বর / পরিচয় (ঐচ্ছিক)</label>
+                <input type="text" id="waPhone" name="phone" class="form-control" placeholder="যেমন: 017xxxxxxxx বা কোম্পানি" />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="waSubject">বিষয় (Subject)</label>
+                <input type="text" id="waSubject" name="subject" class="form-control" placeholder="যেমন: নতুন ওয়েব প্রজেক্ট বা স্টার্টআপ আইডিয়া" />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="waMessage">আপনার বার্তা *</label>
+                <textarea id="waMessage" name="message" class="form-control" placeholder="প্রজেক্ট বা ধারণার বিস্তারিত এখানে লিখুন..." required></textarea>
+              </div>
+
+              <button type="submit" id="sendWhatsAppBtn" class="btn-whatsapp-send" title="ক্লিক করে সরাসরি WhatsApp-এ বার্তা পাঠান">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.301-.15-1.78-.879-2.056-.98-.276-.1-.477-.15-.678.15-.2.301-.778.98-.954 1.18-.176.2-.352.226-.653.075-1.507-.755-2.828-1.92-3.882-3.392-.266-.37-.03-.57.12-.72.135-.136.301-.352.452-.527.15-.176.2-.301.301-.502.1-.2.05-.377-.025-.527-.075-.15-.678-1.633-.929-2.236-.245-.588-.493-.508-.678-.518-.175-.009-.377-.01-.578-.01-.2 0-.527.075-.803.377-.276.301-1.055 1.03-1.055 2.512 0 1.482 1.08 2.914 1.23 3.115.15.201 2.125 3.245 5.148 4.551 2.512 1.085 3.023.87 3.576.819.553-.05 1.78-.728 2.03-1.432.251-.703.251-1.306.176-1.431-.075-.126-.276-.201-.577-.352z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.661 1.434 5.176L2 22l4.982-1.408A9.957 9.957 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.616 0-3.13-.48-4.407-1.308l-.316-.206-2.956.835.845-2.879-.226-.328A8.136 8.136 0 0 1 3.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg>
+                <span>WhatsApp-এ মেসেজ সেন্ড করুন 🚀</span>
+              </button>
+            </form>
+
+            <!-- Bottom Checkbox: Toggle Email Form on Check -->
+            <div style="margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px dashed var(--border-color);">
+              <label style="display: flex; align-items: center; gap: 0.65rem; cursor: pointer; user-select: none;">
+                <input type="checkbox" id="emailFormCheckbox" style="width: 19px; height: 19px; accent-color: #25D366; cursor: pointer;" />
+                <span style="font-size: 0.92rem; color: var(--text-secondary); font-weight: 500;">
+                  ✉️ বিকল্প হিসেবে ইমেইলে বার্তা পাঠাতে চান? (টিক চিহ্ন দিন)
+                </span>
+              </label>
+
+              <!-- Hidden by default, only visible when checkbox is checked -->
+              <div id="emailFormContainer" style="display: none; margin-top: 1.25rem; padding: 1.25rem; background: var(--bg-input); border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+                <div style="margin-bottom: 1rem;">
+                  <h4 style="font-size: 1.05rem; color: var(--text-primary); margin-bottom: 0.25rem;">✉️ ইমেইল বার্তা ফর্ম</h4>
+                  <p style="font-size: 0.85rem; color: var(--text-muted);">
+                    বার্তাটি সরাসরি <strong>srkhancucse@gmail.com</strong> ইনবক্সে পাঠানো হবে।
+                  </p>
+                </div>
+
+                <form id="contactForm">
+                  <div class="form-group">
+                    <label class="form-label" for="contactName">আপনার নাম *</label>
+                    <input type="text" id="contactName" name="name" class="form-control" placeholder="যেমন: রাশেদ মাহমুদ" required />
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="contactEmail">আপনার ইমেইল *</label>
+                    <input type="email" id="contactEmail" name="email" class="form-control" placeholder="name@example.com" required />
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="contactSubject">বিষয় (Subject)</label>
+                    <input type="text" id="contactSubject" name="subject" class="form-control" placeholder="যেমন: নতুন ওয়েব প্রজেক্ট নিয়ে আলোচনা" />
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="contactMessage">আপনার বার্তা *</label>
+                    <textarea id="contactMessage" name="message" class="form-control" placeholder="প্রজেক্ট বা ধারণার বিস্তারিত এখানে লিখুন..." required></textarea>
+                  </div>
+
+                  <button type="submit" class="btn btn-primary" style="width: 100%;">
+                    ইমেইল পাঠান ✉️
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div style="font-weight: 800; font-size: 1.3rem; margin-bottom: 0.75rem;">
+            Shahinur Rahman Khan
+          </div>
+          <p style="max-width: 380px;">
+            সফটওয়্যার ডেভেলপার ও উদ্যোক্তা। ডিজিটাল রূপান্তর এবং আধুনিক প্রযুক্তিগত সলিউশন তৈরিতে নিবেদিত।
+          </p>
+        </div>
+
+        <div>
+          <h4 style="margin-bottom: 1rem;">দ্রুত লিংক</h4>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.95rem;">
+            <li><a href="#about" style="color: var(--text-secondary);">আমার সম্পর্কে</a></li>
+            <li><a href="#skills" style="color: var(--text-secondary);">দক্ষতা</a></li>
+            <li><a href="#projects" style="color: var(--text-secondary);">প্রজেক্ট</a></li>
+            <li><a href="#blog" style="color: var(--text-secondary);">ব্লগ</a></li>
+            <li><a href="#contact" style="color: var(--text-secondary);">যোগাযোগ</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 style="margin-bottom: 1rem;">ব্লগ প্রকাশনা</h4>
+          <p style="font-size: 0.92rem; margin-bottom: 1rem;">
+            আপনার পছন্দের যেকোনো প্রযুক্তি বা ব্যবসায়িক লেখা এখনই সাইটে যোগ করুন।
+          </p>
+          <button class="btn btn-primary btn-sm trigger-publish-blog">
+            ✍️ নতুন ব্লগ পোস্ট
+          </button>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; ২০২৬ Shahinur Rahman Khan. সর্বস্বত্ব সংরক্ষিত।
+        </div>
+        <div>
+          Crafted with passion, modern Web Standards & clean architecture.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Blog Publish Modal -->
+  <div class="modal-overlay" id="blogPublishModal">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 style="font-size: 1.35rem; display: flex; align-items: center; gap: 0.5rem;">
+          <span>✍️</span> নতুন ব্লগ প্রকাশ করুন
+        </h3>
+        <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form id="blogPublishForm">
+          <div class="form-group">
+            <label class="form-label" for="blogTitle">ব্লগের শিরোনাম (Title) *</label>
+            <input type="text" id="blogTitle" name="title" class="form-control" placeholder="যেমন: কিভাবে একটি সফল MVP লঞ্চ করবেন" required />
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+            <div class="form-group">
+              <label class="form-label" for="blogCategory">ক্যাটাগরি *</label>
+              <select id="blogCategory" name="category" class="form-control">
+                <option value="Entrepreneurship">Entrepreneurship (উদ্যোক্তা)</option>
+                <option value="Tech">Tech & Coding (প্রযুক্তি)</option>
+                <option value="Career">Career & Growth (ক্যারিয়ার)</option>
+                <option value="Architecture">Software Architecture</option>
+                <option value="Startup">Startup Journey</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="blogReadTime">পাঠের আনুমানিক সময়</label>
+              <input type="text" id="blogReadTime" name="readTime" class="form-control" placeholder="যেমন: ৫ মিনিট পাঠ" value="৫ মিনিট পাঠ" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="blogTags">ট্যাগসমূহ (কমা দিয়ে আলাদা করুন)</label>
+            <input type="text" id="blogTags" name="tags" class="form-control" placeholder="যেমন: Startup, WebDev, Next.js, Strategy" />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="blogCover">কভার ছবির URL</label>
+            <input type="url" id="blogCover" name="coverImage" class="form-control" placeholder="https://images.unsplash.com/photo-..." />
+            <small style="color: var(--text-muted); font-size: 0.8rem;">ফাঁকা রাখলে স্বয়ংক্রিয় ডিফল্ট কভার ব্যবহৃত হবে।</small>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="blogSummary">সংক্ষিপ্ত সারসংক্ষেপ (Summary) *</label>
+            <textarea id="blogSummary" name="summary" class="form-control" style="min-height: 70px;" placeholder="কার্ডে প্রদর্শনের জন্য ২-৩ লাইনের সারাংশ লিখুন..." required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="blogContent">
+              মূল বক্তব্য (Content - Markdown সমর্থিত) *
+            </label>
+            <small style="color: var(--text-muted); display: block; margin-bottom: 0.4rem;">
+              হেডিংয়ের জন্য ##, কোডের জন্য ```, তালিকার জন্য - এবং কোটের জন্য > ব্যবহার করতে পারবেন।
+            </small>
+            <textarea id="blogContent" name="content" class="form-control" style="min-height: 220px; font-family: var(--font-mono); font-size: 0.9rem;" placeholder="## আপনার লেখার প্রথম হেডিং&#10;&#10;এখানে আপনার সম্পূর্ণ চিন্তা ও তথ্য বিস্তারিত লিখুন..." required></textarea>
+          </div>
+
+          <div style="display: flex; justify-content: flex-end; gap: 0.75rem; margin-top: 1.5rem;">
+            <button type="button" class="btn btn-secondary modal-close-btn">বাতিল</button>
+            <button type="submit" class="btn btn-primary">🚀 পাবলিশ করুন (Publish)</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Blog Reader Modal -->
+  <div class="modal-overlay" id="blogReaderModal">
+    <div class="modal-container">
+      <div class="modal-header">
+        <div style="font-size: 0.9rem; color: var(--text-muted); font-weight: 600;">
+          📖 ব্লগ পাঠিকা
+        </div>
+        <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body" id="blogReaderBody">
+        <!-- Rendered dynamically by blog.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating WhatsApp Quick Button -->
+  <a href="https://wa.me/8801903516116?text=%E0%A6%B9%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B2%E0%A7%8B%20%E0%A6%B6%E0%A6%BE%E0%A6%B9%E0%A6%BF%E0%A6%A8%E0%A7%81%E0%A6%B0%20%E0%A6%AD%E0%A6%BE%E0%A6%8F%2C%20%E0%A6%86%E0%A6%AA%E0%A6%A8%E0%A6%BE%E0%A6%B0%20%E0%A6%B8%E0%A6%BE%E0%A6%A5%E0%A7%87%20%E0%A6%AF%E0%A7%8B%E0%A6%97%E0%A6%BE%E0%A6%AF%E0%A7%8B%E0%A6%97%20%E0%A6%95%E0%A6%B0%E0%A6%A4%E0%A7%87%20%E0%A6%9A%E0%A6%BE%E0%A6%87%E0%A5%A4" class="floating-whatsapp-btn" target="_blank" rel="noopener" title="WhatsApp-এ চ্যাট করুন">
+    <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.301-.15-1.78-.879-2.056-.98-.276-.1-.477-.15-.678.15-.2.301-.778.98-.954 1.18-.176.2-.352.226-.653.075-1.507-.755-2.828-1.92-3.882-3.392-.266-.37-.03-.57.12-.72.135-.136.301-.352.452-.527.15-.176.2-.301.301-.502.1-.2.05-.377-.025-.527-.075-.15-.678-1.633-.929-2.236-.245-.588-.493-.508-.678-.518-.175-.009-.377-.01-.578-.01-.2 0-.527.075-.803.377-.276.301-1.055 1.03-1.055 2.512 0 1.482 1.08 2.914 1.23 3.115.15.201 2.125 3.245 5.148 4.551 2.512 1.085 3.023.87 3.576.819.553-.05 1.78-.728 2.03-1.432.251-.703.251-1.306.176-1.431-.075-.126-.276-.201-.577-.352z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.661 1.434 5.176L2 22l4.982-1.408A9.957 9.957 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.616 0-3.13-.48-4.407-1.308l-.316-.206-2.956.835.845-2.879-.226-.328A8.136 8.136 0 0 1 3.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg>
+  </a>
+
+  <!-- JavaScript Modules -->
+  <script src="assets/js/icons.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/blog.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
+
