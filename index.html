@@ -596,10 +596,22 @@
             <label class="form-label" for="blogContent">
               মূল বক্তব্য (Content - Markdown সমর্থিত) *
             </label>
-            <small style="color: var(--text-muted); display: block; margin-bottom: 0.4rem;">
-              হেডিংয়ের জন্য ##, কোডের জন্য ```, তালিকার জন্য - এবং কোটের জন্য > ব্যবহার করতে পারবেন।
-            </small>
-            <textarea id="blogContent" name="content" class="form-control" style="min-height: 220px; font-family: var(--font-mono); font-size: 0.9rem;" placeholder="## আপনার লেখার প্রথম হেডিং&#10;&#10;এখানে আপনার সম্পূর্ণ চিন্তা ও তথ্য বিস্তারিত লিখুন..." required></textarea>
+            <!-- Markdown Toolbar v2 -->
+            <div class="editor-toolbar" id="editorToolbar">
+              <button type="button" class="toolbar-btn" data-action="h2" title="হেডিং ২">H2</button>
+              <button type="button" class="toolbar-btn" data-action="h3" title="হেডিং ৩">H3</button>
+              <button type="button" class="toolbar-btn" data-action="bold" title="বোল্ড">B</button>
+              <button type="button" class="toolbar-btn" data-action="italic" title="ইটালিক">I</button>
+              <button type="button" class="toolbar-btn" data-action="quote" title="উদ্ধৃতি / কোট">Quote</button>
+              <button type="button" class="toolbar-btn" data-action="code" title="কোড ব্লক">Code</button>
+              <button type="button" class="toolbar-btn" data-action="list" title="তালিকা">List</button>
+              <button type="button" class="toolbar-btn" data-action="hr" title="ডিভাইডার লাইন">Line</button>
+            </div>
+            <textarea id="blogContent" name="content" class="form-control" style="min-height: 220px; font-family: var(--font-mono); font-size: 0.9rem; border-top-left-radius: 0; border-top-right-radius: 0;" placeholder="## আপনার লেখার প্রথম হেডিং&#10;&#10;এখানে আপনার সম্পূর্ণ চিন্তা ও তথ্য বিস্তারিত লিখুন..." required></textarea>
+            <div class="editor-stats-bar">
+              <span id="editorWordCount">০ শব্দ</span>
+              <span id="editorCalcReadTime">১ মিনিট পাঠ</span>
+            </div>
           </div>
 
           <div style="display: flex; justify-content: flex-end; gap: 0.75rem; margin-top: 1.5rem;">
@@ -611,12 +623,15 @@
     </div>
   </div>
 
-  <!-- Blog Reader Modal -->
+  <!-- Blog Reader Modal v2 -->
   <div class="modal-overlay" id="blogReaderModal">
-    <div class="modal-container">
+    <div class="modal-container" id="blogReaderContainer">
+      <!-- Reading Progress Indicator v2 -->
+      <div class="reading-progress-bar" id="readingProgressBar"></div>
+
       <div class="modal-header">
         <div style="font-size: 0.9rem; color: var(--text-muted); font-weight: 600;">
-          📖 ব্লগ পাঠিকা
+          📖 ব্লগ পাঠিকা ২.০
         </div>
         <button class="modal-close-btn" aria-label="Close modal">&times;</button>
       </div>
